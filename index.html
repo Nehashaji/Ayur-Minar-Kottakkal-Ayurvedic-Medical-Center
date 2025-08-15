@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayur Minar Kottakkal Ayurvedic Medical Center</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="home.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="logo1.png" alt="Parents Healthcare Logo and Tagline" />
+  </div>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="About.html">ABOUT US</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+
+    <!-- Dropdown for desktop -->
+    <li class="dropdown desktop-only">
+      <a href="#">WHAT WE OFFER <i class="fas fa-chevron-down"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="treatments.html">Our Treatments</a></li>
+        <li><a href="special.html">Special Treatments</a></li>
+        <li><a href="Packages.html">Special Packages</a></li>
+      </ul>
+    </li>
+
+    <!-- Direct links for mobile -->
+    <li class="mobile-only"><a href="treatments.html">OUR TREATMENTS</a></li>
+    <li class="mobile-only"><a href="special.html">OUR SPECIAL TREATMENTS</a></li>
+    <li class="mobile-only"><a href="Packages.html">OUR SPECIAL PACKAGES</a></li>
+
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+
+
+  <!-- Google Translate Widget -->
+  <div id="google_translate_element"></div>
+</nav>
+
+<!-- Google Translate API -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'ar,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- Hero Section -->
+<section class="hero">
+  <video 
+    class="hero-video"
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    preload="auto" 
+    poster="HomePage/fallback.jpg">
+    <source src="Ayurminar Mothers Day Celebration.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content" data-aos="fade-up">
+    <h1>WELCOME TO <br><span>AYUR MINAR</span></h1>
+    <p>Experience royal healing at Ayur Minar, where ancient Ayurvedic wisdom meets modern luxury, restoring harmony, vitality, and ultimate well-being.</p>
+      <a 
+    href="https://wa.me/971508663123?text=Hello%20Parents%20Healthcare%2C%20I%20would%20like%20to%20book%20an%20appointment."
+    target="_blank"
+    rel="noopener"
+    class="btn btn-whatsapp">
+    Book via WhatsApp
+  </a>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section class="about-us">
+    <div class="about-image" data-aos="fade-right">
+      <img src="aboutimage.jpg" alt="Elderly Ayurvedic Care"/>
+    </div>
+    <div class="about-text" data-aos="fade-left">
+      <h2>Blending Ancient Healing <span>with Modern Luxury</span></h2>
+      <p>At Ayur Minar Kottakkal Ayurvedic Medical Centre, we honour the 5,000 year old legacy of Ayurveda while embracing the comfort and sophistication Dubai is known for. Our vision is simple yet profound to create a sanctuary where every guest experiences healing that is authentic, luxurious, and deeply personal. Led by DHA-licensed Ayurvedic doctors and skilled therapists, we deliver treatments that restore balance, rejuvenate the body, and nurture the spirit bringing care from our heart to your home.</p>
+      <a href="About.html" class="btn">MORE ABOUT US</a>
+    </div>
+  </section>
+
+   <!-- WHAT WE OFFER Section -->
+<section class="what-we-offer">
+    <h2 data-aos="fade-down" data-aos-duration="800">WHAT WE <span>OFFER ?</span></h2>
+    <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        A blend of tradition, care, and tailored Ayurvedic healing for every stage of life.
+    </p>
+
+    <div class="offer-cards">
+        <!-- Card 1 -->
+        <div class="offer-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+            <img src="HomePage/image 1.png" alt="Packages">
+            <div class="offer-card-content">
+                <h3>Our Packages</h3>
+                <p>Flexible Ayurvedic care plans curated to meet different family needs from preventive wellness to intensive healing.</p>
+                <ul>
+                    <li>Golden Plan</li>
+                    <li>Silver Plan</li>
+                    <li>Platinum Plan</li>
+                    <li>Postnatal Care</li>
+                </ul>
+                <a href="Packages.html" class="btn">VIEW MORE</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="offer-card" data-aos="fade-up" data-aos-delay="450" data-aos-duration="800">
+            <img src="HomePage/image 2.png" alt="Treatments">
+            <div class="offer-card-content">
+                <h3>Our Treatments</h3>
+                <p>Authentic classical Ayurvedic therapies designed to heal chronic issues and restore balance.</p>
+                <ul>
+                    <li>Elakizhi</li>
+                    <li>Kativasthi</li>
+                    <li>Shirolepam</li>
+                    <li>Herbal Steam</li>
+                </ul>
+                <a href="treatments.html" class="btn">VIEW MORE</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="offer-card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+            <img src="HomePage/image 3.png" alt="Signature Treatments">
+            <div class="offer-card-content">
+                <h3>Signature Treatments</h3>
+                <p>Targeted healing programs to address pain, stress, postnatal care, and lifestyle related conditions.</p>
+                <ul>
+                    <li>Pain & stress management</li>
+                    <li>Detox & rejuvenation therapies</li>
+                    <li>Arthritic & joint care</li>
+                    <li>Shirolepam</li>
+                </ul>
+                <a href="special.html" class="btn">VIEW MORE</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HEALING JOURNEY Section -->
+<section class="journey-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">
+      <span class="green-text">YOUR</span> <span class="gold-text">HEALING JOURNEY</span>
+    </h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+      Our proven process ensures your parents receive the most effective, personalized Ayurvedic care with family involvement at every step.
+    </p>
+
+    <div class="journey-visual">
+
+      <div class="step-box" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3><i class="fas fa-user-md icon-luxury"></i> Consultation</h3>
+          <p>Initial assessment with our certified Ayurvedic doctors to understand your health needs.</p>
+        </div>
+      </div>
+
+      <div class="step-box" data-aos="fade-up" data-aos-delay="450" data-aos-duration="800">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3><i class="fas fa-scroll icon-luxury"></i> Personalized Plan</h3>
+          <p>Custom treatment plan developed based on your constitution and health conditions.</p>
+        </div>
+      </div>
+
+      <div class="step-box" data-aos="fade-up" data-aos-delay="550" data-aos-duration="700">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3><i class="fas fa-spa icon-luxury"></i> Ayurvedic Therapy</h3>
+          <p>Gentle, traditional treatments delivered with modern comfort in a serene, family-friendly environment.</p>
+        </div>
+      </div>
+
+      <div class="step-box last" data-aos="fade-up" data-aos-delay="650" data-aos-duration="700">
+        <div class="step-number">04</div>
+        <div class="step-content">
+          <h3><i class="fas fa-leaf icon-luxury"></i> Ongoing Recovery</h3>
+          <p>Continuous monitoring, lifestyle guidance and family support for sustained wellness.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--WHY CHOOSE US SECTION-->
+<section class="why-choose-us" data-aos="fade-up" data-aos-duration="1000">
+  <h2 data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+    <span class="green">WHY</span> <span class="orange">CHOOSE US</span> ?
+  </h2>
+  <div class="content-container">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+      <div class="box align-right" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+        <div class="icon-circle"><i class="fas fa-user-md"></i></div>
+        <h3>Well Experienced Doctors</h3>
+        <p>We offer authentic Ayurvedic care with licensed experts, rooted in 5000 years of holistic healing tradition.</p>
+      </div>
+      <div class="box align-right" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
+        <div class="icon-circle"><i class="fas fa-certificate"></i></div>
+        <h3>Certified Therapists</h3>
+        <p>DHA-licensed doctors and trained therapists provide safe, effective, personalized Ayurvedic therapies.</p>
+      </div>
+      <div class="box align-right" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
+        <div class="icon-circle"><i class="fas fa-spa"></i></div>
+        <h3>Healing Atmosphere</h3>
+        <p>At Parents healthcare, experience a natural, holistic space that nurtures mind, body, spirit, and overall wellness.</p>
+      </div>
+    </div>
+
+    <!-- CENTER IMAGE -->
+    <div class="center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+      <img src="HomePage/choose 1.png" alt="Ayurvedic Human" class="center-img" />
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+      <div class="box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+        <div class="icon-circle"><i class="fas fa-heartbeat"></i></div>
+        <h3>Quality Care</h3>
+        <p>Our friendly, expert team at Ayur Minar ensures a patient-focused path to healthy living.</p>
+      </div>
+      <div class="box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
+        <div class="icon-circle"><i class="fas fa-clock"></i></div>
+        <h3>Timely Services</h3>
+        <p>We offer prompt home treatments tailored to each client’s specific needs and schedule.</p>
+      </div>
+      <div class="box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+        <div class="icon-circle"><i class="fas fa-user-check"></i></div>
+        <h3>Personalized Care</h3>
+        <p>Our treatments ensure lifestyle transformation with genuine, tailored healing approaches.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--Ceo message-->
+<section class="ceo-message" data-aos="fade-up" data-aos-duration="1200">
+  <div class="container">
+    
+    <!-- CEO Image (Left on Desktop) -->
+    <div class="ceo-image" data-aos="zoom-in" data-aos-delay="200">
+      <img src="Images/ceo.jpg" alt="CEO of Ayurminar" />
+    </div>
+
+    <!-- CEO Text (Right on Desktop) -->
+    <div class="ceo-text">
+      <h2 class="section-title">A Message from Our CEO</h2>
+      <p class="quote">
+        “At Ayur Minar, we’ve created more than just a wellness centre, we’ve built a sanctuary where the ancient wisdom of Ayurveda and Homeopathy meets the comfort and elegance of modern living. Every treatment we offer is thoughtfully designed, blending time honoured traditions with refined, contemporary care. Our mission is simple yet heartfelt: to care for you as we would for our own family restoring balance, renewing vitality, and enriching your life’s journey with lasting well-being.”
+      </p>
+      <p class="ceo-name">— SABASTIAN JOSEPH</p>
+      <p class="ceo-title">Founder & CEO, Ayur Minar</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Insurance Partners Section -->
+<section class="insurance-partners">
+  <h2 data-aos="fade-up" data-aos-delay="200"><span class="green">INSURANCE</span> <span class="orange">PARTNERS</span></h2>
+  <p class="subtitle" data-aos="fade-up" data-aos-delay="300">We Accept All Insurance Cards</p>
+  <div class="swiper insurance-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-1.jpg" alt="Insurance 1"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-2.jpg" alt="Insurance 2"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-3.jpg" alt="Insurance 3"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-4.jpg" alt="Insurance 4"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-5.jpg" alt="Insurance 5"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-6.jpg" alt="Insurance 6"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-7.jpg" alt="Insurance 7"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-8.jpg" alt="Insurance 8"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-9.jpg" alt="Insurance 9"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-10.jpg" alt="Insurance 10"></div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-left">
+      <img src="HomePage/contactimage.jpg" alt="Ayurvedic background" />
+    </div>
+
+    <div class="contact-right">
+      <h2>
+        Just Make an Appointment & You're Done!
+      </h2>
+
+      <div class="contact-info">
+        <div class="info-block">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>ADCB metro station, Exit No. 1 at first floor in Kanoo building, Suit No. 103, PB No. 114213, Karama, Dubai. U.A.E
+          </p>
+        </div>
+
+        <div class="info-block">
+          <i class="fab fa-whatsapp"></i>
+          <p>+971 50 866 3123</p>
+        </div>
+
+        <div class="info-block">
+          <i class="fas fa-clock"></i>
+          <p>Daily: 9:00 AM - 9:00 PM</p>
+        </div>
+
+        <a 
+          href="https://wa.me/971508663123?text=Hello%20Parents%20Healthcare%2C%20I%20would%20like%20to%20book%20an%20appointment."
+          target="_blank" 
+          rel="noopener" 
+          class="btn-appointment">
+          💬 Have Questions? Let’s Chat
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="logo1.png" alt="Parents Healthcare Logo with Tagline" class="footer-logo" />
+    </div>
+    <div class="footer-center">
+      <p>
+          © 2025 Ayurminar Medical Center. All Rights Reserved.
+      </p>
+    </div>
+    <div class="footer-right">
+      <a href="https://www.facebook.com/ayurminar"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ayurminar.ayurvedic/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/ayur-minar/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@Ayurminar"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  <script src="home.js"></script>
+  
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+const insuranceSwiper = new Swiper('.insurance-swiper', {
+  slidesPerView: 5,
+  spaceBetween: 8,
+  loop: true,
+  rtl: document.documentElement.dir === "rtl", 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: { slidesPerView: 2, spaceBetween: 5 },
+    480: { slidesPerView: 3, spaceBetween: 6 },
+    768: { slidesPerView: 4, spaceBetween: 7 },
+    1024: { slidesPerView: 5, spaceBetween: 8 },
+  },
+  speed: 700
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | Ayur Minar</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="about.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="logo1.png" alt="Ayur Minar logo" />
+  </div>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="About.html">ABOUT US</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+
+    <!-- Dropdown for desktop -->
+    <li class="dropdown desktop-only">
+      <a href="#">WHAT WE OFFER <i class="fas fa-chevron-down"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="treatments.html">Our Treatments</a></li>
+        <li><a href="special.html">Special Treatments</a></li>
+        <li><a href="Packages.html">Special Packages</a></li>
+      </ul>
+    </li>
+
+    <!-- Direct links for mobile -->
+    <li class="mobile-only"><a href="treatments.html">OUR TREATMENTS</a></li>
+    <li class="mobile-only"><a href="special.html">OUR SPECIAL TREATMENTS</a></li>
+    <li class="mobile-only"><a href="Packages.html">OUR SPECIAL PACKAGES</a></li>
+
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+
+  <!-- Google Translate Widget -->
+  <div id="google_translate_element"></div>
+</nav>
+
+<!-- Google Translate API -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'ar,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="overlay"></div>
+    <div class="hero-text" data-aos="fade-up">
+      <h1>Bringing Generations of Healing to Your Home</h1>
+      <p>We offer authentic Ayurvedic healing in a serene, family-focused environment.</p>
+    </div>
+  </section>
+
+<!-- About Section -->
+<section class="about-section">
+  <div class="container about-flex">
+    <div class="about-image" data-aos="fade-right">
+      <img src="Images/aboutus.png" alt="Ayurvedic care" />
+    </div>
+    <div class="about-content" data-aos="fade-left">
+      <h2>About <span style="color:#1b3e2a;">Ayur Minar</span></h2> 
+      <p>Ayur Minar brings the authentic wisdom of Kottakkal Ayurvedic medicine to Dubai, blending centuries-old healing practices with modern luxury.</p>
+      <p>We create a sanctuary of wellness where personalized care rejuvenates the body, calms the mind, and nurtures the spirit.</p>
+      <p>Our expertise spans <strong>parent care</strong>, <strong>women’s wellness</strong>, <strong>stress relief</strong>, and <strong>chronic pain management</strong>, making us a trusted partner in your health journey.</p>
+      <p>With centers in <strong>Dubai</strong> and <strong>RAK</strong>, we deliver authentic Ayurvedic therapies with elegance, comfort, and results.</p>
+    </div>
+  </div>
+</section>
+
+<!-- What Guides Us Section -->
+<section class="guides-us-section">
+  <div class="container">
+    <h2 data-aos="fade-down" class="section-title">What Guides Us</h2>
+    <p data-aos="fade-down" data-aos-delay="200" class="section-subtitle">
+      Guided by ancient wisdom, inspired by modern healing
+    </p>
+
+    <div class="guides-cards">
+      <!-- Mission -->
+      <div class="guide-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-icon">
+          <img src="Images/Goal.png" alt="Mission Icon" />
+        </div>
+        <h3>Mission</h3>
+        <p>
+          At Parents Healthcare, our mission is to provide compassionate, authentic Ayurvedic healing tailored to the needs of parents and families. We aim to restore balance in body, mind, and spirit through personalized treatments rooted in traditional wisdom. Our focus is on long-term wellness, natural therapies, and supportive care that honors every stage of life, especially for aging parents and caregivers.
+        </p>
+      </div>
+
+      <!-- Vision -->
+      <div class="guide-card" data-aos="fade-up" data-aos-delay="450">
+        <div class="card-icon">
+          <img src="Images/Eye.png" alt="Vision Icon" />
+        </div>
+        <h3>Vision</h3>
+        <p>
+          We envision a world where every parent receives holistic, respectful care through the power of Ayurveda. Our goal is to become the UAE’s most trusted Ayurvedic wellness center, known for excellence, warmth, and integrity. We strive to bridge tradition and modernity, making time-tested healing accessible to all families through innovation, education, and love.
+        </p>
+      </div>
+
+      <!-- Core Values -->
+      <div class="guide-card" data-aos="fade-up" data-aos-delay="600">
+        <div class="card-icon">
+          <img src="Images/Diamond Care.png" alt="Core Values Icon" />
+        </div>
+        <h3>Core Values</h3>
+        <ul>
+          <li><strong>Compassion</strong> – We care deeply for each patient like family.</li>
+          <li><strong>Authenticity</strong> – We uphold the purity of Ayurvedic traditions.</li>
+          <li><strong>Trust</strong> – We practice with honesty, safety, and transparency.</li>
+          <li><strong>Excellence</strong> – We deliver high-quality, personalized care.</li>
+          <li><strong>Balance</strong> – We promote harmony between mind, body, and lifestyle.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="principles-section" id="principles">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Ayurvedic Principles We Follow</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+      Our treatments are deeply rooted in time-tested Ayurvedic wisdom and personalized to bring balance, wellness, and renewal.
+    </p>
+
+    <div class="principles-grid">
+      <div class="principle-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://cdn-icons-png.flaticon.com/512/2647/2647625.png" alt="Dosha Balancing">
+        <h3>Dosha Balancing</h3>
+        <p>We assess and treat imbalances in Vata, Pitta, and Kapha to restore harmony in body and mind.</p>
+      </div>
+      <div class="principle-card" data-aos="fade-up" data-aos-delay="300">
+      <img src="https://cdn-icons-png.flaticon.com/512/5123/5123196.png" alt="Panchakarma Detox">
+        <h3>Panchakarma Detox</h3>
+        <p>Experience deep cleansing and rejuvenation through traditional Panchakarma therapies tailored to your needs.</p>
+      </div>
+      <div class="principle-card" data-aos="fade-up" data-aos-delay="400">
+      <img src="https://cdn-icons-png.flaticon.com/512/2382/2382579.png" alt="Herbal Healing">
+        <h3>Herbal Healing</h3>
+        <p>We use potent natural herbs and oils to promote healing and nourish your body from within.</p>
+      </div>
+      <div class="principle-card" data-aos="fade-up" data-aos-delay="500">
+        <img src="https://cdn-icons-png.flaticon.com/512/3498/3498146.png" alt="Holistic Lifestyle">
+        <h3>Holistic Lifestyle</h3>
+        <p>Our treatments guide you toward daily habits aligned with nature’s rhythms for lasting wellness.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Doctor Section -->
+<section class="doctor-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Meet Our Expert Doctors</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Where Healing Meets Excellence</p>
+
+    <!-- Doctor 1 -->
+    <div class="doctor-profile" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+      <div class="doctor-image">
+        <img src="Images/doc.png" alt="Dr. Nimmy Shameem" />
+      </div>
+      <div class="doctor-details">
+        <h3>Dr. Nimmy Shameem</h3>
+        <p class="specialty">Medical Director</p>
+        <p class="description">
+          With 5+ years of experience in India and UAE, Dr. Nimmy blends traditional Ayurveda with modern lifestyle needs, offering personalized treatments for lasting wellness.
+        </p>
+      </div>
+    </div>
+
+    <!-- Doctor 2 -->
+    <div class="doctor-profile reverse" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+      <div class="doctor-image">
+        <img src="Images/doc2.png" alt="Dr. Kadeeja Nargees" />
+      </div>
+      <div class="doctor-details">
+        <h3>Dr. Kadeeja Nargees</h3>
+        <p class="specialty">Ayurvedic Specialist</p>
+        <p class="description">
+          Specializing in Panchakarma and postnatal care, Dr. Kadeeja combines holistic therapies with expert guidance to restore balance, vitality, and well-being.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Insurance Partners Section -->
+<section class="insurance-partners">
+  <h2 data-aos="fade-up" data-aos-delay="200"><span class="green">INSURANCE</span> <span class="orange">PARTNERS</span></h2>
+  <p class="subtitle" data-aos="fade-up" data-aos-delay="300">We Accept All Insurance Cards</p>
+  <div class="swiper insurance-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-1.jpg" alt="Insurance 1"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-2.jpg" alt="Insurance 2"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-3.jpg" alt="Insurance 3"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-4.jpg" alt="Insurance 4"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-5.jpg" alt="Insurance 5"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-6.jpg" alt="Insurance 6"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-7.jpg" alt="Insurance 7"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-8.jpg" alt="Insurance 8"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-9.jpg" alt="Insurance 9"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-10.jpg" alt="Insurance 10"></div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-left">
+      <img src="HomePage/contactimage.jpg" alt="Ayurvedic background" />
+    </div>
+
+    <div class="contact-right">
+      <h2>
+        Just Make an Appointment & You're Done!
+      </h2>
+
+      <div class="contact-info">
+        <div class="info-block">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>ADCB metro station, Exit No. 1 at first floor in Kanoo building, Suit No. 103, PB No. 114213, Karama, Dubai. U.A.E
+          </p>
+        </div>
+
+        <div class="info-block">
+          <i class="fab fa-whatsapp"></i>
+          <p>+971 50 866 3123</p>
+        </div>
+
+        <div class="info-block">
+          <i class="fas fa-clock"></i>
+          <p>Daily: 9:00 AM - 9:00 PM</p>
+        </div>
+
+        <a 
+          href="https://wa.me/971508663123?text=Hello%20Parents%20Healthcare%2C%20I%20would%20like%20to%20book%20an%20appointment."
+          target="_blank" 
+          rel="noopener" 
+          class="btn-appointment">
+          💬 Have Questions? Let’s Chat
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="logo1.png" alt="Parents Healthcare Logo with Tagline" class="footer-logo" />
+    </div>
+    <div class="footer-center">
+      <p>
+          © 2025 Ayurminar Medical Center. All Rights Reserved.
+      </p>
+    </div>
+    <div class="footer-right">
+      <a href="https://www.facebook.com/ayurminar"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ayurminar.ayurvedic/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/ayur-minar/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@Ayurminar"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200 });
+  </script>
+
+  <script src="home.js"></script>
+
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+const insuranceSwiper = new Swiper('.insurance-swiper', {
+  slidesPerView: 5,
+  spaceBetween: 8,
+  loop: true,
+  rtl: document.documentElement.dir === "rtl", 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: { slidesPerView: 2, spaceBetween: 5 },
+    480: { slidesPerView: 3, spaceBetween: 6 },
+    768: { slidesPerView: 4, spaceBetween: 7 },
+    1024: { slidesPerView: 5, spaceBetween: 8 },
+  },
+  speed: 700
+});
+</script>
+
+</body>
+</html>

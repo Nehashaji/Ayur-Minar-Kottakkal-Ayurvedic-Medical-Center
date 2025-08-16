@@ -289,10 +289,10 @@ body {
   margin: 0 auto;
 }
 
-/* Section Styling */
+/* ---------- Section Styling ---------- */
 .media-gallery {
-  padding: 80px 5%;
-  background: #fdfcf6; /* soft ivory */
+  padding: 60px 5% 80px; /* reduced top padding for cleaner spacing */
+  background: #fdfcf6;
 }
 
 .section-title {
@@ -300,21 +300,21 @@ body {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px; /* balanced spacing below */
   color: #1b3e2a;
   position: relative;
 }
 
 .section-title span {
-  color: #bfa760; /* luxury gold */
+  color: #bfa760;
 }
 
-/* Photo Gallery Grid */
+/* ---------- Photo Gallery ---------- */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .gallery-grid img {
@@ -329,26 +329,25 @@ body {
   box-shadow: 0 12px 28px rgba(0,0,0,0.15);
 }
 
-/* Instagram Showcase */
+/* ---------- Instagram Showcase ---------- */
 .reels-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
-/* Reel wrapper with correct aspect ratio */
-.reels-grid .reel-container {
+.reel-container {
   position: relative;
   width: 100%;
-  padding-top: 177.78%; 
+  padding-top: 177.78%; /* 9:16 ratio */
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.reels-grid .reel-container iframe {
+.reel-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -358,17 +357,21 @@ body {
   border-radius: 15px;
 }
 
-.reels-grid .reel-container:hover {
+.reel-container:hover {
   transform: scale(1.03);
   box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
-/* Video Highlights */
+/* ---------- Video Highlights ---------- */
+.video-highlights {
+  margin-top: 60px; /* clean gap after Instagram button */
+}
+
 .youtube-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  margin-top: 40px; 
+  margin-bottom: 50px;
 }
 
 .youtube-grid iframe {
@@ -378,34 +381,14 @@ body {
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
-.section-title {
-  margin-top: 50px; 
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
-  color: #1b3e2a;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .gallery-grid, .reels-grid, .youtube-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .gallery-grid, .reels-grid, .youtube-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
+/* ---------- Buttons ---------- */
 .cta-btn-container {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;   
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;        
+  gap: 15px;
 }
 
 .cta-btn {
@@ -420,7 +403,7 @@ body {
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-  min-width: 180px; 
+  min-width: 180px;
   text-align: center;
 }
 
@@ -450,10 +433,24 @@ body {
   box-shadow: 0 8px 24px rgba(255,0,0,0.4);
 }
 
-/* ---------- Mobile Responsive ---------- */
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .gallery-grid, .youtube-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
+  .gallery-grid, .youtube-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
   .cta-btn {
-    width: 100%;        
+    width: 100%;
     font-size: 0.95rem;
     padding: 12px 20px;
   }
@@ -461,7 +458,6 @@ body {
 
 @media (max-width: 480px) {
   .cta-btn {
-    width: 100%;       
     font-size: 0.9rem;
     padding: 10px 18px;
   }

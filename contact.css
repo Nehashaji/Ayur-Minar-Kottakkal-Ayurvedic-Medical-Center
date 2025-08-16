@@ -325,9 +325,47 @@ body{
 .info-text p{font-size:14px;color:var(--muted);margin:0}
 
 /* quick actions */
-.quick-actions{display:flex;gap:12px;margin-top:30px}
-.action-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;background:var(--deep);color:#fff;text-decoration:none;font-weight:600}
-.action-btn.outline{background:#fff;color:var(--deep);border:1px solid rgba(0,0,0,0.06)}
+.quick-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--deep);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* WhatsApp (outline style) */
+.action-btn.outline {
+  background: #fff;
+  color: var(--deep);
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Hover Effects */
+.action-btn:hover {
+  background: #bfa760; 
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.action-btn.outline:hover {
+  background: var(--deep);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
 
 /* right form column */
 .contact-form-wrap .form-card{

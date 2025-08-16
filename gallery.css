@@ -310,6 +310,7 @@ body {
 }
 
 /* ---------- Photo Gallery ---------- */
+/* Gallery Layout */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -317,16 +318,40 @@ body {
   margin-bottom: 60px;
 }
 
+/* Gallery Items */
 .gallery-grid img {
   width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  height: 320px; /* fixed elegant height */
+  object-fit: cover; /* keeps images proportional */
+  border: 3px solid #1b3e2a; /* Luxury green border */
+  border-radius: 0; /* sharp edges for premium feel */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .gallery-grid img:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+  border-color: #bfa760; /* gold border on hover */
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-grid img {
+    height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid img {
+    height: 250px;
+  }
 }
 
 /* ---------- Instagram Showcase ---------- */
@@ -340,7 +365,7 @@ body {
 .reel-container {
   position: relative;
   width: 100%;
-  padding-top: 177.78%; /* 9:16 ratio */
+  padding-top: 177.78%;
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
@@ -364,7 +389,7 @@ body {
 
 /* ---------- Video Highlights ---------- */
 .video-highlights {
-  margin-top: 60px; /* clean gap after Instagram button */
+  margin-top: 60px;
 }
 
 .youtube-grid {
@@ -484,11 +509,14 @@ body {
 }
 
 #lightbox-img {
-  width: 50vw;    
-  height: 80vh;    
-  object-fit: cover;  
+  max-width: 90vw;   
+  max-height: 90vh; 
+  width: auto;       
+  height: auto;     
+  object-fit: contain; 
   box-shadow: 0 0 20px rgba(0,0,0,0.6);
 }
+
 
 @media (max-width: 600px) {
   #lightbox-img {
@@ -512,27 +540,6 @@ body {
 
 .lightbox .close:hover {
   color: #fff;
-}
-
-/* Responsive Breakpoints */
-@media (max-width: 900px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-}
-
-@media (max-width: 600px) {
-  .gallery {
-    grid-template-columns: 1fr; 
-  }
-
-  .hero-text h1 {
-    font-size: 28px;
-  }
-
-  .hero-text p {
-    font-size: 16px;
-  }
 }
 
 /* Contact Section */
